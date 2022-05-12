@@ -1,0 +1,379 @@
+/*      Author:Kaylee Martin
+        Project:Exam 2
+        Date:4/4/2022
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 5px;
+  padding:25px;
+  background-color:grey;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #6699cc;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  height: 250px;
+  background-image: url("pizza_header2.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description{
+  height:210px;
+  padding:10px;
+  border: double 10px #ffaa80;
+}
+/* title glow */
+.glow {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: 'Dancing Script', cursive;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px  #c2c2f0, 0 0 40px  #c2c2f0, 0 0 50px  #c2c2f0, 0 0 60px  #c2c2f0, 0 0 70px  #c2c2f0;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px 	 #6699cc, 0 0 40px 	 #6699cc, 0 0 50px 	 #6699cc, 0 0 60px 	 #6699cc, 0 0 70px #6699cc, 0 0 80px #6699cc;
+  }
+}
+
+/* menu pages rows and column layout */
+.some-page-wrapper {
+  margin: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex: 33.33%;
+  flex-direction: column;
+}
+.column2 {
+  display: flex;
+  flex: 33.33%;
+  flex-direction: column;
+}
+
+
+
+.pizza1 {
+  background-image: url("cheese_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+.pizza2 {
+  background-image: url("pepperoni_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+.pizza3 {
+  background-image: url("veggie_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+.pizza4 {
+  background-image: url("margherita_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+.pizza5 {
+  background-image: url("bbq_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+.pizza6 {
+  background-image: url("buffalo_pizza.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  object-position: center;
+  height:300px;
+  width:100%;
+  padding:20px;
+}
+
+/* stylings for descriptions */
+p{
+  text-align:center;
+  font-family: 'Grape Nuts', cursive;
+  font-weight:bold;
+  font-size:20px;
+}
+h2{
+  text-align:center;
+  font-family: 'Dancing Script', cursive;
+  font-size:35px;
+  font-weight:bold;
+}
+h3{
+  font-family: 'Dancing Script', cursive;
+  font-size:35px;
+  font-weight:bold;
+  text-align:center;
+}
+h4{
+  text-align:left;
+  font-family: 'Indie Flower', cursive;
+  font-size:35px;
+  font-weight:bold;
+}
+
+/* Form Styling */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 45px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Dancing Script', cursive;
+  font-size:20px;
+  font-weight:bold;
+
+}
+legend{
+  font-family: 'Dancing Script', cursive;
+  font-size:30px;
+  font-weight:bold;
+}
+
+label {
+  padding: 15px 15px 15px 5px;
+  display: inline-block;
+  font-family: 'Grape Nuts', cursive;
+  font-weight:bold;
+  font-size:30px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.divider {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 35px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding:10px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  padding:10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 16px 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* testimonial styling */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+/* user rating styles */
+.checked {
+  color: orange;
+  object-position:center;
+}
+
+/* social media buttons */
+.fa {
+  padding: 40px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  object-position:center;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  object-position:center;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 20px;
+  object-position:center;
+}
+/* coupon styling */
+.coupon {
+  border: 5px dotted #bbb;
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+  padding:20px;
+  background-color:grey;
+}
+
+.container1 {
+  padding: 2px 16px;
+  background-color: #6699cc;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+/* Footer */
+.footer {
+  text-align: left;
+  background: #ddd;
+  background-color: grey;
+  object-fit:cover;
+}
+
+
+
+
+/* responsiveness for nav bar */
+@media screen and (max-width: 578px) {
+  .row, .row2, .navbar, .column, .column2, .glow, header, h1 {
+    flex-direction: column;
+  }
+}
+/* responsiveness for testimonial */
+@media (max-width: 578px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}

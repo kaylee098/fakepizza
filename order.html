@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--    Author:Kaylee Martin
+        Project:Exam 2
+        Date:4/4/2022 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- styles link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- google font links -->
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <!-- Font Awesome Kit Code -->
+  <script src="https://kit.fontawesome.com/802dc7e435.js" crossorigin="anonymous"></script>
+  <title>Exam 2</title>
+</head>
+
+<body>
+  <header>
+    <!-- heading image: constant throughout site -->
+    <div class="header">
+      <a href="menu.html">
+      </a>
+      <h1 class="glow">Cheech's Pizza Parlor</h1>
+    </div>
+    <div class="navbar">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="ourlocation.html">Our Location</a>
+    </div>
+
+  </header>
+
+  <!-- Start of Form -->
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>
+            Contact Information:
+          </legend>
+          <label for="fname">
+            First Name:
+            <input type="text" name="fname" id="fname" required placeholder="First Name" />
+          </label>
+          <label for="lname">
+            Last Name:
+            <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+          </label>
+          <label for="phone">
+            Enter your phone number:
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Pick Your Perfect Pie!
+          </legend>
+          <label for="pizza">Pizza Type:</label>
+          <select id="pizza" name="pizza">
+            <option value="7LayerCheese">7 Layer Cheese</option>
+            <option value="PepperoniPizza">Pepperoni Pizza</option>
+            <option value="VeggiePizza">Veggie Pizza</option>
+            <option value="MargheritaPizza">MargheritaPizza</option>
+            <option value="BBQChickenPizza">BBQ Chicken Pizza</option>
+            <option value="BuffaloChickenPizza">Buffalo Chicken Pizza</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>
+            How Many?
+          </legend>
+          <label for="quantity">
+            Quantity (between 1 and 15):
+            <input type="number" id="quantity" name="quantity" min="1" max="15" />
+          </label>
+        </fieldset>
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- create columns -->
+    <div class="column2" style="background-color:#bbb;">
+      <div class="container">
+        <img src="pizza_guy.jpg" alt="Avatar" style="width:90px">
+        <p>Kevin Morrisey: Avid Pizza Lover</p>
+        <p>One of the best pizza's I have ever had! Would definitely recommend to anyone who loves flavorful pizza.</p>
+        <!-- rating -->
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="coupon">
+          <div class="container1">
+            <h2>Cheech's Pizza Parlor</h2>
+          </div>
+          <div class="container1" style="background-color:white">
+            <h2><b>Save $5 On Your First Online Order</b></h2>
+            <p>$5 off any order of $25 or more. Only valid for online orders, or mobile app orders. Use promo code to receive discount. One coupon per customer.</p>
+          </div>
+          <div class="container1">
+            <p>Use Promo Code: <span class="promo">SAVE5</span></p>
+            <p class="expire">Expires: April 15, 2022</p>
+          </div>
+        </div>
+        <h3>Connect with Us on Social Media</h3>
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3> Come Eat With Us Today!</h3>
+    <p>
+      Cheech's Pizza Parlor <i class="fa-solid fa-pizza-slice"></i> 1826 Republic Rd, Springfield MO &nbsp; 65804 &nbsp;
+      <i class="fa-solid fa-pizza-slice"></i> Phone:217-894-1037 <i class="fa-solid fa-pizza-slice"></i>
+      E-mail: <a href="cheechspizza@gmail.com">cheechspizza@gmail.com </a>
+    </p>
+  </div>
+</body>
+
+</html>
